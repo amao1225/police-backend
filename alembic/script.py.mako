@@ -1,0 +1,1 @@
+/home/ubuntu/bash/alembic/script.py.mako

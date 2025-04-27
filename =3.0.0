@@ -1,0 +1,6 @@
+Looking in indexes: http://mirrors.tencentyun.com/pypi/simple
+Collecting werkzeug
+  Using cached http://mirrors.tencentyun.com/pypi/packages/52/24/ab44c871b0f07f491e5d2ad12c9bd7358e527510618cb1b803a88e986db1/werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Requirement already satisfied: MarkupSafe>=2.1.1 in ./venv/lib/python3.12/site-packages (from werkzeug) (2.1.5)
+Installing collected packages: werkzeug
+Successfully installed werkzeug-3.1.3

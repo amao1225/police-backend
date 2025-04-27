@@ -1,0 +1,72 @@
+# 忽略敏感文件
+               # 根目录下的.env文件
+*.env.local         # 所有以.env.local结尾的文件
+
+# 忽略虚拟环境（精确匹配根目录）
+# 忽略IDE配置文件
+/.vscode/
+/.idea/
+
+# 忽略所有层级的上传目录（递归忽略）
+**/uploads/        # 匹配任何子目录下的uploads文件夹
+
+# 基础排除
+.env
+venv/
+__pycache__/
+*.py[cod]
+*.log
+*.tar.xz
+*.egg-info/
+*.egg
+
+meson.build
+src/
+test-build/
+*.xz
+
+.coverage
+
+alembic/README
+migrations/README
+
+# 系统生成目录（针对你的项目）
+gobject-introspection/
+gobject-introspection-1.64.0/ 
+gobject-introspection-*/  # 排除所有版本的gobject目录
+gobject-introspection-*.tar.xz
+gobject-introspection-*.tar.xz.1
+test-build/
+build/
+dist/
+
+# 数据库迁移中间文件（保留migrations/目录，但排除临时文件）
+migrations/alembic.ini
+migrations/env.py
+migrations/script.py.mako
+!migrations/versions/  # 保留版本文件
+
+# 二进制文件和资源
+*.so
+*.dll
+*.exe
+*.pyc
+
+# 日志和临时文件
+app.log
+*.tmp
+
+# 第三方依赖（根据项目实际情况调整）
+*.xz
+*.whl
+*.egg-info/
+*.egg
+
+# 本地配置和构建产物
+*.pyo
+*.pyd
+__pypy_cache__/
+*.c
+*.h
+
+test-build/
